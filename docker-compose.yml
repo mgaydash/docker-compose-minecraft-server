@@ -28,7 +28,7 @@ services:
   overviewer:
     build: ./overviewer
     volumes:
-      - './overviewer/overviewer-cron:/etc/cron.d/'
+      - './overviewer/overviewer-cron:/etc/cron.d/overviewer-cron'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
