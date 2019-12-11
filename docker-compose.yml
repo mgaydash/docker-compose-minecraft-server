@@ -16,7 +16,10 @@ services:
     volumes:
       - 'minecraft_data:/data'
       - './me_mcserver.png:/data/server-icon.png'
-
+  jobber:
+    image: 'jobber'
+    volumes:
+      - './jobber.yml:/home/jobberuser/.jobber'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
