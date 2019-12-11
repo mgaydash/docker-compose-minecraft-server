@@ -5,6 +5,8 @@ services:
     restart: always
     environment:
       EULA: 'TRUE'
+      REPLACE_ENV_VARIABLES: 'TRUE'
+      MOTD: 'Not the bees!!!'
     ports:
       - '25565:25565'
     volumes:
