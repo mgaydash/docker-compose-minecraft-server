@@ -9,7 +9,7 @@ services:
       OVERRIDE_SERVER_PROPERTIES: 'true'
       MOTD: 'Not the bees!!!'
       DIFFICULTY: 'normal'
-      SEED: '1909600681984991067'
+      SEED: '-929179197546132'
       OPS: 'mbeoiosttieer'
     ports:
       - '25565:25565'
