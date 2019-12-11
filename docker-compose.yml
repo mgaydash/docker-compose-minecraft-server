@@ -18,6 +18,9 @@ services:
       - './me_mcserver.png:/data/server-icon.png'
   jobber:
     image: 'jobber'
+    command: |
+      /bin/sh -c '/bin/chmod 644 /home/jobberuser/.jobber \
+      && /usr/libexec/jobberrunner -u /var/jobber/1000/cmd.sock /home/jobberuser/.jobber'
     volumes:
       - './jobber.yml:/home/jobberuser/.jobber'
 volumes:
