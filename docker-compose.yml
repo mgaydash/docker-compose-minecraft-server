@@ -23,6 +23,8 @@ services:
       && /usr/libexec/jobberrunner -u /var/jobber/1000/cmd.sock /home/jobberuser/.jobber'
     volumes:
       - './jobber.yml:/home/jobberuser/.jobber'
+      - 'minecraft_data:/backup_source'
+      - '/efs/minecraft-backups-2019:/backup_dest'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
