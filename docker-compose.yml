@@ -27,6 +27,11 @@ services:
       - '/efs/minecraft-backups:/backup_dest'
   overviewer:
     build: ./overviewer
+    volumes:
+      - 'minecraft_data:/minecraft'
+      - 'overviewer_data:/overviewer'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
+  overviewer_data:
+    name: 'overviewer_data'
