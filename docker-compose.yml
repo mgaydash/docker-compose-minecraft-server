@@ -15,6 +15,7 @@ services:
       - '25565:25565'
     volumes:
       - 'minecraft_data:/data'
+      - './me_mcserver.png:/data/servce-icon.png'
 
 volumes:
   minecraft_data:
