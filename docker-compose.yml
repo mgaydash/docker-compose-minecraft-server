@@ -30,6 +30,12 @@ services:
     volumes:
       - 'minecraft_data:/minecraft'
       - 'overviewer_data:/overviewer'
+  web:
+    image: 'nginx'
+    ports:
+      - 80:80
+    volumes:
+      - 'overviewer_data:/usr/share/nginx/html'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
