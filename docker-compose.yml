@@ -6,7 +6,11 @@ services:
     environment:
       EULA: 'TRUE'
       MEMORY: '3G'
+      OVERRIDE_SERVER_PROPERTIES: 'true'
       MOTD: 'Not the bees!!!'
+      DIFFICULTY: 'normal'
+      SEED: '1909600681984991067'
+      OPS: 'mbeoiosttieer'
     ports:
       - '25565:25565'
     volumes:
