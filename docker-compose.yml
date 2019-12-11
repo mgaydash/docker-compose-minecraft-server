@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       EULA: 'TRUE'
-      REPLACE_ENV_VARIABLES: 'TRUE'
+      MEMORY: '3G'
       MOTD: 'Not the bees!!!'
     ports:
       - '25565:25565'
