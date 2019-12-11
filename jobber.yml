@@ -4,3 +4,4 @@ jobs:
   MinuteTest:
     cmd: echo "Hello world..."
     time: 0 *
+
