@@ -24,7 +24,7 @@ services:
     volumes:
       - './jobber.yml:/home/jobberuser/.jobber'
       - 'minecraft_data:/backup_source'
-      - '/efs/minecraft-backups-2019:/backup_dest'
+      - '/efs/minecraft-backups:/backup_dest'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
