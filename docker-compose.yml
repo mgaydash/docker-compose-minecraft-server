@@ -27,8 +27,6 @@ services:
       - '/efs/minecraft-backups:/backup_dest'
   overviewer:
     build: ./overviewer
-    volumes:
-      - './overviewer/overviewer-cron:/etc/cron.d/ov-cron'
 volumes:
   minecraft_data:
     name: 'minecraft_data'

@@ -7,4 +7,8 @@ RUN apt-get update \
 && apt-get update \
 && apt-get install -y minecraft-overviewer
 
+COPY overviewer-cron /etc/cron.d/overviewer-cron
+
+RUN chmod 600 /etc/cron.d/overviewer-cron
+
 CMD ["cron", "-f"]
