@@ -25,6 +25,10 @@ services:
       - './jobber.yml:/home/jobberuser/.jobber'
       - 'minecraft_data:/backup_source'
       - '/efs/minecraft-backups:/backup_dest'
+  overviewer:
+    build: ./overviewer
+    volumes:
+      - './overviewer-cron:/etc/cron.d/'
 volumes:
   minecraft_data:
     name: 'minecraft_data'
