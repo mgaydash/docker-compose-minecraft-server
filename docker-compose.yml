@@ -11,6 +11,7 @@ services:
       DIFFICULTY: 'normal'
       SEED: '-929179197546132'
       OPS: 'mbeoiosttieer'
+      SPAWN_PROTECTION: '0'
     ports:
       - '25565:25565'
     volumes:
