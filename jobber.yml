@@ -5,5 +5,6 @@ jobs:
     cmd: |
       echo 'Creating backup'
       tar -czf /backup_dest/minecraft_backup_$(date +%Y%m%d%H%M%S).tar.gz /backup_source/
+      find /efs/minecraft-backups -ctime +20
       echo 'Done.'
     time: 0 0 8
